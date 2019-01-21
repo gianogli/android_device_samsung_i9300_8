@@ -32,6 +32,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9300/bluetooth
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := lineageos_i9300_defconfig
+# Kernel < 3.8 (no finit_module!)
+KERNEL_HAS_FINIT_MODULE := false
 
 TARGET_SPECIFIC_HEADER_PATH += device/samsung/i9300/include
 
